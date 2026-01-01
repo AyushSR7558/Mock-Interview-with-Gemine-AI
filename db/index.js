@@ -1,5 +1,6 @@
 import mysql from "mysql2/promise";
 import * as schema from "./schema";
+import { drizzle } from "drizzle-orm/singlestore/driver";
 
 const pool = mysql.createPool({
   host: process.env.dev_host,

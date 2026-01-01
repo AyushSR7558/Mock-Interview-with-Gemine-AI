@@ -19,7 +19,7 @@ export const MockInterview = mysqlTable("mockInterview", {
 
   createdBy: varchar("createdBy", { length: 255 }).notNull(),
 
-  createdAt: timestamp("createdAt").defaultNow(),
+  createdAt: timestamp("created_at").defaultNow(), // ✅ FIXED
 
   mockId: varchar("mockId", { length: 255 }).notNull(),
 });
