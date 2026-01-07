@@ -164,7 +164,7 @@ App will run on: **[http://localhost:3000](http://localhost:3000)**
 
 ### 🏠 Dashboard
 
-![Dashboard](./screenshots/Dashboard.png)
+![Dashboard](./public/screenshots/Dashboard.png)
 
 ### 🎤 Interview – Question & Recording
 
