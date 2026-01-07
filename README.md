@@ -159,6 +159,29 @@ App will run on: **[http://localhost:3000](http://localhost:3000)**
 
 ---
 
+## 📸 Screenshots
+
+### 🏠 Dashboard
+
+![Dashboard](./screenshots/Dashboard.png)
+
+### 🎤 Interview – Question & Recording
+
+![Interview Start](public/screenshots/interview-start.png)
+
+### 🧠 AI Feedback & Rating
+
+![Feedback](public/screenshots/feedback.png)
+
+### 📜 Interview History
+
+![Interview History](public/screenshots/history.png)
+
+---
+
+
+
+
 ## 📸 Application Flow
 
 1. User creates a new interview
