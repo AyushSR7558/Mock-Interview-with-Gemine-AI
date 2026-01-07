@@ -46,6 +46,26 @@ An **AI-powered mock interview web application** that simulates real technical i
 
 ---
 
+## 📸 Screenshots
+
+### 🏠 Dashboard
+
+![Dashboard](./public/screenshots/Dashboard.png)
+
+### 🎤 Interview – Question & Recording
+
+![Interview Start](./public/screenshots/StartInterview.png)
+
+### 🧠 AI Feedback & Rating
+
+![Feedback](./public/screenshots/FeedBack.png)
+
+### 📜 Interview History
+
+![Interview History](./public/screenshots/AddHistory.png)
+
+---
+
 ## 🛠️ Tech Stack
 
 ### Frontend
@@ -157,26 +177,6 @@ npm run dev
 ```
 
 App will run on: **[http://localhost:3000](http://localhost:3000)**
-
----
-
-## 📸 Screenshots
-
-### 🏠 Dashboard
-
-![Dashboard](./public/screenshots/Dashboard.png)
-
-### 🎤 Interview – Question & Recording
-
-![Interview Start](./public/screenshots/StartInterview.png)
-
-### 🧠 AI Feedback & Rating
-
-![Feedback](./public/screenshots/FeedBack.png)
-
-### 📜 Interview History
-
-![Interview History](./public/screenshots/AddHistory.png)
 
 ---
 
