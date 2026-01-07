@@ -168,15 +168,15 @@ App will run on: **[http://localhost:3000](http://localhost:3000)**
 
 ### 🎤 Interview – Question & Recording
 
-![Interview Start](./screenshots/StartInterview.png)
+![Interview Start](./public/screenshots/StartInterview.png)
 
 ### 🧠 AI Feedback & Rating
 
-![Feedback](./screenshots/FeedBack.png)
+![Feedback](./public/screenshots/FeedBack.png)
 
 ### 📜 Interview History
 
-![Interview History](./screenshots/AddHistory.png)
+![Interview History](./public/screenshots/AddHistory.png)
 
 ---
 
