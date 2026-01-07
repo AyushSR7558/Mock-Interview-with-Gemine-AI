@@ -8,40 +8,41 @@ An **AI-powered mock interview web application** that simulates real technical i
 
 ### 🧠 AI-Driven Interview
 
-* Dynamically generated interview questions based on **technology stack and experience level**
-* Supports **multi-question interview flow**
-* AI-generated **ideal answers** for comparison
+- Dynamically generated interview questions based on **technology stack and experience level**
+- Supports **multi-question interview flow**
+- AI-generated **ideal answers** for comparison
 
 ### 🎙️ Voice Answer Recording
 
-* Record answers using microphone (Speech-to-Text)
-* Minimum answer duration enforced for better evaluation
-* Stores user responses securely
+- Record answers using microphone (Speech-to-Text)
+- Minimum answer duration enforced for better evaluation
+- Stores user responses securely
 
 ### 📊 Smart Evaluation & Feedback
 
-* AI evaluates answers and provides:
+- AI evaluates answers and provides:
 
-  * Correct / Ideal Answer
-  * Personalized feedback
-  * Per-question rating
-* **Overall interview rating** calculated
+  - Correct / Ideal Answer
+  - Personalized feedback
+  - Per-question rating
+
+- **Overall interview rating** calculated
 
 ### 📁 Interview History
 
-* View **previous interviews** from dashboard
-* Resume or review completed interviews
-* Clean and intuitive UI for navigation
+- View **previous interviews** from dashboard
+- Resume or review completed interviews
+- Clean and intuitive UI for navigation
 
 ### 🧩 Modular Interview Flow
 
-* Question navigation (Next / Previous)
-* Separate interview start, answer recording, and feedback pages
+- Question navigation (Next / Previous)
+- Separate interview start, answer recording, and feedback pages
 
 ### 🔐 Authentication Ready
 
-* Integrated authentication configuration
-* Secure access to user-specific interview data
+- Integrated authentication configuration
+- Secure access to user-specific interview data
 
 ---
 
@@ -49,35 +50,35 @@ An **AI-powered mock interview web application** that simulates real technical i
 
 ### Frontend
 
-* **Next.js 14 (App Router)**
-* **React.js**
-* **Tailwind CSS**
-* **Shadcn/UI components**
+- **Next.js 14 (App Router)**
+- **React.js**
+- **Tailwind CSS**
+- **Shadcn/UI components**
 
 ### Backend
 
-* **Next.js Server Actions**
+- **Next.js Server Actions**
 
 ### Database
 
-* **MySQL**
-* **Drizzle ORM**
-* Schema-based structured data storage
+- **MySQL**
+- **Drizzle ORM**
+- Schema-based structured data storage
 
 ### AI Integration
 
-* **Google Gemini API**
-* Used for:
+- **Google Gemini API**
+- Used for:
 
-  * Question generation
-  * Answer evaluation
-  * Feedback & rating
+  - Question generation
+  - Answer evaluation
+  - Feedback & rating
 
 ### Utilities & Tools
 
-* Speech Recognition API (Browser)
-* UUID for interview sessions
-* Environment-based configuration
+- Speech Recognition API (Browser)
+- UUID for interview sessions
+- Environment-based configuration
 
 ---
 
@@ -111,9 +112,9 @@ utils/
 
 ## 🧪 Database Tables (Example)
 
-* **Interview** – Interview metadata
-* **Questions** – Generated questions
-* **QuestionAndFeedback** – User answers, AI feedback, rating
+- **Interview** – Interview metadata
+- **Questions** – Generated questions
+- **QuestionAndFeedback** – User answers, AI feedback, rating
 
 ---
 
@@ -167,20 +168,17 @@ App will run on: **[http://localhost:3000](http://localhost:3000)**
 
 ### 🎤 Interview – Question & Recording
 
-![Interview Start](public/screenshots/interview-start.png)
+![Interview Start](./screenshots/StartInterview.png)
 
 ### 🧠 AI Feedback & Rating
 
-![Feedback](public/screenshots/feedback.png)
+![Feedback](./screenshots/FeedBack.png)
 
 ### 📜 Interview History
 
-![Interview History](public/screenshots/history.png)
+![Interview History](./screenshots/AddHistory.png)
 
 ---
-
-
-
 
 ## 📸 Application Flow
 
@@ -195,11 +193,11 @@ App will run on: **[http://localhost:3000](http://localhost:3000)**
 
 ## 🎯 Future Enhancements
 
-* Resume-based question generation
-* Video answer recording
-* Admin dashboard
-* Export interview reports (PDF)
-* Company-specific interview modes
+- Resume-based question generation
+- Video answer recording
+- Admin dashboard
+- Export interview reports (PDF)
+- Company-specific interview modes
 
 ---
 
