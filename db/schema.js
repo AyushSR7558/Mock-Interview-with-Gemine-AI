@@ -23,3 +23,16 @@ export const MockInterview = mysqlTable("mockInterview", {
 
   mockId: varchar("mockId", { length: 255 }).notNull(),
 });
+
+export const QuestioAndFeedBack = mysqlTable("questionAndFeedBack", {
+  id: int("id").primaryKey().autoincrement(),
+  mockIdRef: varchar("mockId", { length: 255 }).notNull(),
+  question: text("question").notNull(),
+  correctAns: text("correctAns").notNull(),
+  userAns: text("userAns").notNull(),
+  feedBack: text("feedBack"),
+  rating: varchar("rating", { length: 2 }),
+  createdBy: varchar("createdBy", { length: 255 }).notNull(),
+
+  createdAt: timestamp("created_at").defaultNow(),
+});
