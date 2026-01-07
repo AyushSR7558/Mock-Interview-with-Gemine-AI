@@ -11,6 +11,7 @@ const Page = ({ detail, interviewId }) => {
 
   const [activeQuestionIndx, setActiveQuestionIndx] = useState(0);
   const [answers, setAnswers] = useState({});
+  const [disableNavigation, setDisableNavigation] = useState(false);
 
   return (
     <div>
@@ -19,6 +20,7 @@ const Page = ({ detail, interviewId }) => {
           mockInterviewQuestion={mockInterviewQuestion}
           activeQuestionIndx={activeQuestionIndx}
           setActiveQuestionIndx={setActiveQuestionIndx}
+          disableNavigation={disableNavigation}
         />
 
         <RecordAns
@@ -27,19 +29,35 @@ const Page = ({ detail, interviewId }) => {
           answers={answers}
           setAnswers={setAnswers}
           interviewId={interviewId}
+          disableNavigation={disableNavigation}
+          setDisableNavigation={setDisableNavigation}
         />
       </div>
-      <div className="flex justify-end gap-6">
-        {activeQuestionIndx > 0 ? (
-          <Button className="bg-purple-600" onClick={() => {setActiveQuestionIndx(activeQuestionIndx - 1)}}>Prev Question</Button>
-        ) : null}
-        {activeQuestionIndx != mockInterviewQuestion.length - 1 ? (
-          <Button className="bg-purple-600" onClick={() => {setActiveQuestionIndx(activeQuestionIndx + 1)}}>Next Question</Button>
-        ) : null}
 
-        {activeQuestionIndx == mockInterviewQuestion.length - 1 ? (
-         <Link href={"/dashboard/interview/" + interviewId + "/feedback"}> <Button>End Interview </Button></Link>
-        ) : null}
+      <div className="flex justify-end gap-6 mt-6">
+        {activeQuestionIndx > 0 && (
+          <Button
+            disabled={disableNavigation}
+            onClick={() => setActiveQuestionIndx((p) => p - 1)}
+          >
+            Prev Question
+          </Button>
+        )}
+
+        {activeQuestionIndx < mockInterviewQuestion.length - 1 && (
+          <Button
+            disabled={disableNavigation}
+            onClick={() => setActiveQuestionIndx((p) => p + 1)}
+          >
+            Next Question
+          </Button>
+        )}
+
+        {activeQuestionIndx === mockInterviewQuestion.length - 1 && (
+          <Link href={`/dashboard/interview/${interviewId}/feedback`}>
+            <Button disabled={disableNavigation}>End Interview</Button>
+          </Link>
+        )}
       </div>
     </div>
   );

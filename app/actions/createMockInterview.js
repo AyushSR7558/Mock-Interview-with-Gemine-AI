@@ -34,7 +34,7 @@ export async function createMockInterview({
     .insert(MockInterview)
     .values({
       mockId: mockId,
-      jobPosition,
+      jobPosition : jobPosition,
       jobDesc: jobDescription,
       jobExperience: String(yoe),
       jsonMockResp: JSON.stringify(response),

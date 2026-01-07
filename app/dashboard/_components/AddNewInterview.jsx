@@ -36,6 +36,7 @@ const AddNewInterview = () => {
         yoe,
         email: user?.primaryEmailAddress?.emailAddress,
       });
+      console.log(mockId);
 
       router.push("/dashboard/interview/" + mockId);
     } catch (err) {

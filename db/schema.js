@@ -13,7 +13,7 @@ export const MockInterview = mysqlTable("mockInterview", {
 
   jobPosition: varchar("jobPosition", { length: 255 }).notNull(),
 
-  jobDesc: varchar("jobDesc", { length: 255 }).notNull(),
+  jobDesc: text("jobDesc").notNull(),
 
   jobExperience: varchar("jobExperience", { length: 255 }).notNull(),
 
